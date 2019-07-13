@@ -1,0 +1,332 @@
+// Font Face Categories
+.font-face {
+    &-base {
+        font-family: $font-family-base;
+        font-weight: normal;
+    }
+    &-header {
+        font-family: $font-family-header;
+        font-weight: bold;
+    }
+    &-header-large {
+        font-family: $font-family-header-large;
+    }
+}
+
+// Font Size
+.font-size {
+    &-10 {
+        font-size: rem(10px !important);
+    }
+    &-11 {
+        font-size: rem(11px !important);
+    }
+    &-12 {
+        font-size: rem(12px !important);
+    }
+    &-13 {
+        font-size: rem(13px !important);
+    }
+    &-14 {
+        font-size: rem(14px !important);
+    }
+    &-15 {
+        font-size: rem(15px !important);
+    }
+    &-16 {
+        font-size: rem(16px !important);
+    }
+    &-17 {
+        font-size: rem(17px !important);
+    }
+    &-18 {
+        font-size: rem(18px !important);
+    }
+    &-19 {
+        font-size: rem(19px !important);
+    }
+    &-20 {
+        font-size: rem(20px !important);
+    }
+    &-21 {
+        font-size: rem(21px !important);
+    }
+    &-22 {
+        font-size: rem(22px !important);
+    }
+    &-23 {
+        font-size: rem(23px !important);
+    }
+    &-24 {
+        font-size: rem(24px !important);
+    }
+    &-25 {
+        font-size: rem(25px !important);
+    }
+    &-26 {
+        font-size: rem(26px !important);
+    }
+    &-27 {
+        font-size: rem(27px !important);
+    }
+    &-28 {
+        font-size: rem(28px !important);
+    }
+    &-29 {
+        font-size: rem(29px !important);
+    }
+    &-30 {
+        font-size: rem(30px !important);
+    }
+}
+
+// Transitions
+.transition {
+    &-slow {
+        @include transition(all 0.5s ease);
+    }
+    &-fast {
+        @include transition(all 0.3s ease);
+    }
+}
+
+// Link Options
+.link {
+    position: relative;
+    &::after {
+        content: "";
+        background-color: $color-primary;
+        width: 100%;
+        height: rem(2px);
+        position: absolute;
+        left: 0;
+        bottom: rem(1px);
+        @include opacity(0);
+        @extend .transition-fast;
+    }
+    &--underline {
+        &::after {
+            @include opacity(1);
+        }
+        &:hover {
+            &::after {
+                @include opacity(0);
+            }
+        }
+    }
+    &--default {
+        @include links(
+            $color-default-link,
+            $color-default-link-visited,
+            $color-default-link-hover,
+            $color-default-link-active
+        );
+        &::after {
+            background-color: $color-base;
+        }
+    }
+    &--primary {
+        @include links(
+            $color-primary-link,
+            $color-primary-link-visited,
+            $color-primary-link-hover,
+            $color-primary-link-active
+        );
+        &::after {
+            background-color: $color-base;
+        }
+    }
+    &--light {
+        @include links(
+            $color-light-link,
+            $color-light-link-visited,
+            $color-light-link-hover,
+            $color-light-link-active
+        );
+    }
+}
+
+// Truncating the paragraphs
+.truncate {
+    &--1-line {
+        @include ellipsis(20px, 1);
+    }
+
+    &--2-line {
+        @include ellipsis(50px, 2);
+    }
+
+    &--3-line {
+        @include ellipsis(70px, 3);
+    }
+}
+
+// BG Cover
+.bg {
+    &-cover {
+        background-size: cover;
+    }
+    &-position {
+        &-center {
+            background-position: center center;
+        }
+    }
+    &-no-repeat {
+        background-repeat: no-repeat;
+    }
+    &-primary {
+        background-color: $color-primary !important;
+    }
+    &-secondary {
+        background-color: $color-secondary !important;
+    }
+    &-base {
+        background-color: $color-base !important;
+    }
+    &-color-1 {
+        background-color: #2D91C3;
+    }
+    &-100{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    &-right{
+        background: url('../../images/society.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 60vw;
+        width: 100vw;
+        height: 90vh;
+    }
+
+    &-left{
+        background: url('../../images/community.jpg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 60vw;
+        width: 100vw;
+        height: 90vh;
+    }
+    &-footer{
+        background: url('../../images/glass-with-ice.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        // height: 100vh;
+    }
+}
+
+// Text
+.text {
+    &-primary {
+        color: $color-primary !important;
+    }
+    &-secondary {
+        color: $color-secondary !important;
+    }
+    &-white {
+        color: $color-white !important;
+    }
+    &-base {
+        color: $color-base !important;
+    }
+    &-blue {
+        color: var(--blue) !important;
+    }
+    &-line-through {
+        text-decoration: line-through !important;
+    }
+}
+
+.full-screen {
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
+    @extend .bg-position-center;
+}
+
+.position {
+    &-l-0 {
+        left: 0;
+    }
+    &-r-0 {
+        right: 0;
+    }
+    &-b-0 {
+        bottom: 0;
+    }
+    &-t-0 {
+        top: 0;
+    }
+    &-lt-0 {
+        @extend .position-l-0, .position-t-0;
+    }
+}
+
+.opacity {
+    &-0 {
+        @include opacity(0);
+    }
+    &-1 {
+        @include opacity(1);
+    }
+    &-2 {
+        @include opacity(.2);
+    }
+    &-3 {
+        @include opacity(.3);
+    }
+    &-4 {
+        @include opacity(.4);
+    }
+    &-5 {
+        @include opacity(.5);
+    }
+    &-6 {
+        @include opacity(.6);
+    }
+    &-7 {
+        @include opacity(.7);
+    }
+    &-8 {
+        @include opacity(.8);
+    }
+    &-9 {
+        @include opacity(.9);
+    }
+}
+//z-index
+.z{
+    &-1{
+        z-index: 1;
+    }
+    &-2{
+        z-index: 2;
+    }
+    &-3{
+        z-index: 3;
+    }
+    &-4{
+        z-index: 4;
+    }
+    &-5{
+        z-index: 5;
+    }
+    &-6{
+        z-index: 6;
+    }
+    &-7{
+        z-index: 7;
+    }
+}
+
+.p{
+    &-t-10{
+        padding-top: 10px;
+    }
+    &-t-20{
+        padding-top: 20px;
+    }
+}

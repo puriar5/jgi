@@ -1,0 +1,58 @@
+$global: "theme";
+
+:root {
+    --primary: #A38152;
+    --secondary: #869EB5;
+    --dark-brown: #21272C;
+    --ligth-brown: #7B7F83;
+    --dark-blue: #0d3559;
+    --yellow: #f2cb06;
+    --cyan: #bde8f2;
+    --success: #28a745;
+    --info: #bde8f2;
+    --warning: #f2cb06;
+}
+
+// Font Variables
+// $base-font: 	'Quattrocento Sans', "Helvetica Neue", Arial, sans-serif;
+// $header-font: 	'Quattrocento Sans', "Helvetica Neue", Arial, sans-serif;
+
+// Bootstrap
+$color-primary: var(--primary) !default;
+$color-secondary: var(--secondary) !default;
+$color-success: var(--success) !default;
+$color-info: var(--info) !default;
+$color-warning: var(--warning) !default;
+$color-danger: var(--danger) !default;
+
+// Other Colors
+$color-white: var(--white);
+$color-black: var(--dark);
+
+// Page Color Properties
+$color-body: var(--dark-brown);
+
+$color-base: var(--primary);
+$color-header-typo: var(--primary);
+$color-border: var(--primary);
+$color-border-light: #525B64;
+$color-hamburger: var(--primary);
+$color-btn: var(--dark-brown);
+
+$color-header: var(--primary);
+$color-footer: var(--primary);
+
+$color-primary-link: var(--primary);
+$color-primary-link-hover: lighten(#EFBB72, 20%);
+$color-primary-link-visited: var(--primary);
+$color-primary-link-active: var(--primary);
+
+$color-light-link: var(--white);
+$color-light-link-hover: white(0.75);
+$color-light-link-visited: var(--white);
+$color-light-link-active: var(--white);
+
+$color-default-link: var(--secondary);
+$color-default-link-hover: white(0.75);
+$color-default-link-visited: var(--secondary);
+$color-default-link-active: var(--secondary);

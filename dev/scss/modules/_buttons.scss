@@ -1,0 +1,88 @@
+.btn {
+    border: none;
+    line-height: 1;
+    font-size: rem(18px);
+    outline: 0;
+    // @include border-radius(rem(5px));
+    @include media-breakpoint-up(md) {
+        font-size: rem(22px);
+    }
+
+    &-primary,
+    &-cta {
+        border: 1px solid $color-border-light;
+        text-align: left;
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(5px);
+        @extend .link--light;
+
+        @include hover-supported() {
+            background-color: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(5px);
+            color: $color-white;
+
+            &:visited {
+                background: none;
+            }
+        }
+
+        &:focus,
+        &.focus {
+            outline: 0;
+        }
+    }
+
+    &-primary {
+        margin: rem(10px 0);
+        padding: rem(34px 28px);
+    }
+
+    &-cta {
+        padding: rem(8px 18px);
+    }
+
+    &-cta-outline {
+        background-color: transparent;
+        border: rem(4px) solid var(--dark-blue);
+        padding: rem(7px 14px);
+        font-size: rem(16px);
+        font-weight: 700;
+        color: var(--dark-blue);
+
+        @include media-breakpoint-up(md) {
+            border-width: rem(5px);
+            padding: rem(9px 20px);
+            font-size: rem(25px);
+        }
+
+        @include hover-supported() {
+            background-color: var(--dark-blue);
+            color: $color-white;
+        }
+    }
+
+    &-secondary {
+        border: 1px solid $color-base;
+        background-color: $color-btn;
+        font-size: rem(22px);
+        font-family: $font-family-header;
+        @extend .link--primary;
+        padding: rem(7px 26px);
+    }
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active,
+.open>.dropdown-toggle.btn-secondary {
+    background-color: $color-primary;
+}
+
+a,
+button,
+.btn {
+    &:focus {
+        outline: none;
+    }
+}

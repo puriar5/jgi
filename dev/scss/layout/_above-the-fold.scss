@@ -1,0 +1,82 @@
+.above-the-fold {
+    // background-color: var(--cyan);
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: rem(35px);
+    @include media-breakpoint-up(md) {
+        padding-bottom: rem(190px);
+    }
+    &__img {
+        max-width: 100%;
+        @include media-breakpoint-up(lg) {
+            max-width: 105%;
+            margin-left: rem(-12px);
+        }
+    }
+}
+
+.bg-parallax{
+    position: relative;
+    background: url('../images/bg-jgi-bar.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 114vh;
+    z-index: -1;
+    overflow: hidden;
+}
+.bg-item{
+    height: auto;
+    bottom: -55px;
+}
+.bg-blur{
+    top: 750px;
+    height: 715px;
+}
+.nav-menu{
+    position: fixed;
+    padding: 36px 0 0 44px;
+    z-index: 10;
+}
+
+.home-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: rem(31px);
+    text-align: center;
+    .brand-logo{
+        width: rem(130px);
+        height: rem(130px);
+    }
+   
+    &-brand{
+        margin-top: rem(115px);
+        margin-bottom: rem(60px);
+        .company{
+            font-family: 'aliens and cows';
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+.boxes{
+    width: 70%;
+    margin: 0 auto;
+    a{
+        position: relative;
+        width: 45%;
+        outline: 0;
+        &:nth-child(1){
+            border-right: none;
+        }
+        .right{
+            position: absolute;
+            right: rem(20px);
+            bottom: rem(40px);
+        }
+    }
+}

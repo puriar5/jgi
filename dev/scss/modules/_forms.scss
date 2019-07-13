@@ -1,0 +1,98 @@
+.form-control {
+    background-color: transparent;
+    border: 2px solid var(--cyan);
+    height: rem(48px);
+    color: $color-white;
+    padding: rem(10px 20px);
+    @extend .font-size-20, .transition-fast;
+    @include border-radius(5px);
+    @include placeholder {
+        color: var(--cyan);
+    }
+    &:focus,
+    &:active {
+        color: $color-white;
+    }
+    &:focus {
+        background-color: transparent;
+        border-color: $color-white;
+    }
+}
+
+.custom-control-label {
+    padding-left: rem(30px);
+    padding-top: rem(3px);
+    @extend .font-size-20;
+    color: var(--cyan);
+    &::before,
+    &::after {
+        background-color: transparent;
+        border-color: var(--cyan);
+        border-width: rem(2px);
+        width: rem(30px);
+        height: rem(30px);
+    }
+}
+
+.custom-control-input {
+    &:checked ~ .custom-control-label {
+        &::before {
+            background-color: var(--cyan);
+            border-color: var(--cyan);
+        }
+    }
+}
+
+.custom-checkbox .custom-control-input {
+    &:checked ~ .custom-control-label {
+        &::after {
+            background-image: url(#{$theme-imgpath}/checked.svg);
+        }
+    }
+}
+
+input,
+.btn,
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--cyan) !important;
+    font-size: 20px;
+}
+// input,
+// textarea {
+//     @include placeholder() {
+//         color: var(--cyan);
+//         font-size: 50px;
+//     }
+// }
+
+.get-api {
+    .form-control {
+        border-color: $color-white;
+    }
+    input::placeholder,
+    textarea::placeholder {
+        color: $color-white !important;
+    }
+    .custom-control-label {
+        color: $color-white;
+        &::before,
+        &::after {
+            border-color: $color-white;
+        }
+    }
+    .custom-control-input {
+        &:checked ~ .custom-control-label {
+            &::before {
+                background-color: $color-white;
+                border-color: $color-white;
+            }
+        }
+    }
+}

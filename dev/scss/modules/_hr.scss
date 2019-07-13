@@ -1,0 +1,14 @@
+.hr {
+    border: 0;
+    border-bottom: 2px solid transparent;
+    height: 1px;
+    display: block;
+    padding: 0;
+    margin: 5px 0;
+    &--light {
+        border-color: $color-border-light;
+    }
+    &--dark {
+        border-color: $color-border;
+    }
+}

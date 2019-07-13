@@ -1,0 +1,24 @@
+.modal {
+    &-api {
+        .modal {
+            &-dialog {
+                max-width: rem(750px);
+            }
+            &-content {
+                background-color: var(--mid-blue);
+                border: none;
+                @include border-radius(15px);
+                padding: rem(25px);
+                @include media-breakpoint-up(lg) {
+                    padding: rem(45px 75px);
+                }
+            }
+        }
+        .close {
+            float: none;
+            position: absolute;
+            top: rem(-20px);
+            right: rem(-45px);
+        }
+    }
+}

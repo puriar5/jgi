@@ -1,0 +1,51 @@
+@import 'global/path',
+        'global/fonts';
+
+@import //'vendors/animate/animate',
+        'vendors/bootstrap/bootstrap';
+        // 'vendors/pvt-icons/pvc-icons';
+
+@import 'base/functions',
+        'base/global-vars';
+
+@import 'mixins/mixins';
+
+@import 'utilities/placeholders',
+        'utilities/typo',
+        'utilities/helper',
+        'utilities/config';
+
+@import //'modules/accordion',
+        // 'modules/alert',
+        // 'modules/blockquote',
+        // 'modules/breadcrumbs',
+        'modules/arrow',
+        'modules/buttons',
+        'modules/cards',
+        'modules/carousel',
+        'modules/dropdowns',
+        'modules/forms',
+        'modules/hamburger',
+        'modules/hr',
+        'modules/label',
+        'modules/list',
+        // 'modules/loader',
+        // 'modules/media',
+        'modules/modal',
+        // 'modules/nano',
+        'modules/navbar',
+        'modules/or',
+        // 'modules/tab',
+        // 'modules/pagination',
+        // 'modules/panel',
+        // 'modules/popup',
+        // 'modules/pushy',
+        'modules/social',
+        // 'modules/table',
+        // 'modules/tabpanel',
+        'modules/title';
+
+@import 'layout/above-the-fold',
+        'layout/header',
+        'layout/main',
+        'layout/footer';
