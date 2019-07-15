@@ -63,7 +63,6 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    overflow: hidden;
     &--bg{
         background: url('../../images/glass.png');
         background-repeat: no-repeat;
@@ -76,6 +75,25 @@
         display: inline-block;
         width: 40%;
         z-index: 12;
+    }
+    &--slider{
+        width: 100%;
+        margin-top: rem(54px);
+        height: rem(392px);
+        position: relative;
+        .previous, .next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 11;
+        }
+        .previous{
+            left: -40px;
+        }
+        .next{
+            right: -40px;
+        }
+        
     }
 
 }
@@ -160,3 +178,38 @@
 }
 
 
+.drinks-gallery{
+    padding-top: rem(41px);
+    .row{
+        padding-top: rem(70px);
+    }
+}
+
+
+
+.job-links{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    a{
+        position: relative;
+        width: 70%;
+        display: inline-block;
+        margin: 0;
+        padding: 20px 0 50px 0;
+        h4{
+            position: absolute;
+            left: 30px;
+            padding-bottom: 23px;
+        }
+        .right{
+            position: absolute;
+            right: rem(20px);
+        }
+    }
+}

@@ -21,15 +21,19 @@
 <body>
     <div class="above-the-fold z-5">
         <header class="nav-menu">
-            <div class="burgerMenu">
+            <div class="burgerMenu" onclick="toggleSideMenu(1)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
                 <span class="menu">Menu</span>
             </div>
         </header>
+
+      @@include('includes/sidenav.html')
+
+
         <section class="home-wrap">
-            <img src="images/svg/jgi-logo.svg" class="brand-logo img-fluid" alt="jgi Logo">
+            <a href="index.html"><img src="images/svg/jgi-logo.svg" class="brand-logo img-fluid" alt="jgi Logo"></a>
             <article class="home-wrap-brand">
                 <h3 class="text-primary">Jawalakhel Group of Industries</h3>
                 <h1 class="font-face-header-large text-bold">Mark of Distinction</h1>
@@ -62,7 +66,7 @@
     <img src="images/bg-blur-top.png" alt="jgi bg" class="bg-100 z-4 img-fluid bg-blur">
     <!-- End of above the fold with all backgrounds -->
 
-    <section class="content-wrap z-5">
+    <section id="ourCompany" class="content-wrap">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -87,7 +91,7 @@
                             <br /><br />
                             The following companies are managed by JGI:
                         </p>
-                        <a href="" class="btn-secondary">Learn More</a>
+                        <a href="company.html" class="btn-secondary">Learn More</a>
                     </div>
                 </div>
                 <div class="col-6 d-flex flex-row-reverse content-wrap--img">
@@ -104,7 +108,7 @@
 
     <!-- End of wrap company content -->
 
-    <div class="content-wrap">
+    <div class="content-wrap" id="ourBrands">
         <div class="container">
             <div class="row">
                 <div class="col-5">
@@ -154,12 +158,12 @@
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <a href="" class="btn-secondary">Our Brands</a>
+            <a href="brands.html" class="btn-secondary">Our Brands</a>
         </div>
     </section>
     <!-- End of Brands content -->
 
-    <section class="content-mid">
+    <section class="content-mid" id="ourHistory">
         <div class="content-mid--bg">
             <div class="content-mid--text">
                 <h4 class="text-primary">Our History</h4>
@@ -196,18 +200,18 @@
                     crafted with a commitment to deliver on the consumer experience.
                 </p>
 
-                <a href="" class="btn-secondary">Learn Our History</a>
+                <a href="history.html" class="btn-secondary">Learn Our History</a>
             </div>
         </div>
     </section>
 
     <!-- End of Our History Section -->
-    <section class="process">
+    <section class="process" id="ourProcess">
         <div class="content-right">
             <div class="content-right--bg">
                 <div class="content-right--text">
                     <h4 class="w-25">
-                        <span class="page-title">our brands</span>
+                        <span class="page-title">our Process</span>
                     </h4>
                     <h2 class="font-face-header-large text-bold w-75">Lorem ipsum neum sil elevatium</h2>
                     <p>
@@ -241,7 +245,7 @@
 
     <!-- End of Our Process -->
 
-    <section class="content-society bg-right">
+    <section class="content-society bg-right" id="inSociety">
         <div class="content-society--text">
             <h4>
                 <span class="page-title">In Society</span>
@@ -283,7 +287,7 @@
     <!-- End of  In Society-->
 
 
-    <section class="content-community bg-left">
+    <section class="content-community bg-left" id="careers">
         <div class="content-community--text">
             <h4 class="text-primary">Careers</h4>
             <h2 class="font-face-header-large text-bold">Lorem ipsum dolor sit amen
@@ -312,33 +316,12 @@
                 <br /><br />
             </p>
 
-            <a href="" class="btn-secondary">Find a Job</a>
+            <a href="jobs.html" class="btn-secondary">Find a Job</a>
         </div>
     </section>
 
     <!-- End of  In Society-->
-
-    <footer class="footer bg-footer">
-        <img src="images/jgi-footer-logo12@2x.png" alt="">
-
-        <div class="footer-nav">
-            <ul>
-                <li>Home</li>
-                <li>Our Brands</li>
-                <li>Our History</li>
-                <li>Leadership</li>
-                <li>Carreer</li>
-            </ul>
-        </div>
-
-        <div class="card-footer">
-            <h6 class="text-primary">Email Us</h6>
-            <h4 class="font-face-header-large">hello@jginepal.com</h4>
-        </div>
-        <h4 class="text-primary">
-        COPY RIGHT JAWALAKHEL GROUP OF INDUSTRIES
-    </h4>
-    </footer>
+    @@include('includes/footer.html')    
 
 </body>
 

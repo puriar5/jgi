@@ -1,3 +1,7 @@
+console.log("app connected");
+
+
+
 $(document).ready(function() {
     // Something Magic here
 
@@ -40,3 +44,5 @@ $(document).ready(function() {
 
     headerAdjustment();
 });
+
+

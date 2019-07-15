@@ -1,6 +1,7 @@
 .navbar {
     &-brand {
         width: rem(115px);
+
         @include media-breakpoint-up(md) {
             width: rem(215px);
         }
@@ -10,29 +11,119 @@
 .nav {
     &-item {
         margin-bottom: 10px;
+
         @include last-child() {
             margin-top: rem(15px);
         }
+
         @include media-breakpoint-up(md) {
             margin-left: rem(20px);
             margin-bottom: 0;
+
             @include first-child() {
                 margin-left: 0;
             }
+
             @include last-child() {
                 margin-bottom: 0;
                 margin-top: 0;
             }
         }
+
         @include media-breakpoint-up(lg) {
             margin-left: rem(35px);
         }
     }
+
     &-link {
         padding: rem(10px 0);
         @extend .link--primary;
+
         @include media-breakpoint-up(md) {
             padding: 0;
         }
     }
+}
+
+
+
+/* SIDE MENU */
+.side-menu {
+    display: flex;
+    width: 1000px;
+    position: fixed;
+    left: -1000px;
+    z-index: 10;
+    height: 114vh;
+    transition: all 0.3s ease-in;
+
+    &--close {
+        font-family: $font-family-header;
+        cursor: pointer;
+        padding-bottom: rem(40px);
+        font-size: rem(20px);
+    }
+}
+
+.side-menu-content {
+    height: 100%;
+    width: 60%;
+    padding: 40px 40px;
+    background: $color-body;
+}
+
+.side-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    background: var(--main-header-secondary-color);
+    overflow: hidden;
+    transition: var(--main-header-transition);
+    padding-inline-start: rem(25px);
+    font-family: $font-family-header-large;
+    font-size: rem(35px);
+    font-weight: bold;
+    text-transform: none;
+}
+
+.side-menu ul li {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background: var(--main-header-secondary-color);
+    color: var(--main-header-quaternary-color);
+    border-bottom: 1px solid var(--main-header-tertiary-color);
+    width: 100%;
+    height: calc(var(--main-header-menu-button-height)*2);
+    transition: var(--main-header-transition);
+    text-decoration: none;
+    font-family: var(--main-header-font-family);
+    line-height: rem(73px);
+
+    a {
+        color: $color-white;
+    }
+
+}
+
+.side-menu a:hover {
+    background: var(--main-header-tertiary-color);
+}
+
+.side-menu ul ul li {
+    font-size: rem(28px);
+    font-weight: normal;
+    padding-inline-start: 20px;
+
+    a {
+        color: $color-secondary;
+    }
+
+}
+
+.nav-footer{
+    width: 100%;
+    text-align: center;
+    padding-top: rem(154px);
 }

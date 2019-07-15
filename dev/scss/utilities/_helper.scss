@@ -324,9 +324,24 @@
 
 .p{
     &-t-10{
-        padding-top: 10px;
+        padding-top: rem(10px);
     }
     &-t-20{
-        padding-top: 20px;
+        padding-top: rem(20px);
+    }
+    &-t-30{
+        padding-top: rem(30px);
+    }
+    &-t-40{
+        padding-top: rem(40px);
+    }
+    &-t-50{
+        padding-top: rem(50px);
+    }
+    &-t-60{
+        padding-top: rem(60px);
+    }
+    &-t-120{
+        padding-top: rem(120px);
     }
 }

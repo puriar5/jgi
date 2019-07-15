@@ -4,7 +4,7 @@ $global: "theme";
     --primary: #A38152;
     --secondary: #869EB5;
     --dark-brown: #21272C;
-    --ligth-brown: #7B7F83;
+    --light-brown: #7B7F83;
     --dark-blue: #0d3559;
     --yellow: #f2cb06;
     --cyan: #bde8f2;
@@ -38,6 +38,7 @@ $color-border: var(--primary);
 $color-border-light: #525B64;
 $color-hamburger: var(--primary);
 $color-btn: var(--dark-brown);
+$color-dropdown: #676B6D;
 
 $color-header: var(--primary);
 $color-footer: var(--primary);

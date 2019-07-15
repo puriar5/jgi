@@ -4,6 +4,7 @@ body {
   font-size: 10px;
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch; // Makes the smooth scrolling on ios devices
 }
 
