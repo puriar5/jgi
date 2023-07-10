@@ -1,11 +1,11 @@
 # Leadspace
 
 <details>
-<summary>Leadspace.blade</summary>
+<summary>Leadspace.blade.php</summary>
 
 #### Direction:
 ___
-- Create a file inside wp-content/themes/sage10/resources/views/blocks name Leadspace
+- Create a file inside wp-content/themes/sage10/resources/views/blocks with name leadspace.blade.php
 - Copy code below to this file
 ### Code
 
@@ -190,7 +190,10 @@ ___
 <details>
 <summary>Leadspace.js</summary>
 
-## Leadspace .js
+#### Direction:
+___
+- Create a file inside wp-content/themes/sage10/resources/scripts/blocks with name leadspace.js
+- Copy code below to this file
 
 ### Code
 ```
@@ -316,7 +319,12 @@ new videoPlayer();
 <details>
 <summary>Leadspace.scss</summary>
 
-## Leadspace scss
+
+#### Direction:
+___
+- Create a file inside wp-content/themes/sage10/resources/styles/modules with name leadspace.scss
+- Copy code below to this file
+
 
 ## Code
 ```
