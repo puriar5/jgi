@@ -1,9 +1,5 @@
-# Reusable Modules documentation
+# Leadspace
 
-<details>
-<summary> Leadspace </summary>
-
-<blockquote>
 <details>
 <summary>Leadspace.blade</summary>
 
@@ -187,8 +183,6 @@
 @endif
 ```
 </details>
-</blockquote>
-<blockquote>
 
 <details>
 <summary>Leadspace.js</summary>
@@ -315,8 +309,6 @@ export default videoPlayer;
 new videoPlayer();
 ```
 </details>
-</blockquote>
-<blockquote>
 
 <details>
 <summary>Leadspace.scss</summary>
@@ -362,5 +354,7 @@ new videoPlayer();
 }
 ```
 </details>
-</blockquote>
-</details>
+
+
+<br><br><br>
+[Back to the list](../../jgi/readme.md)
