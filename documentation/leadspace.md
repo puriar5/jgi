@@ -3,7 +3,10 @@
 <details>
 <summary>Leadspace.blade</summary>
 
-## Leadspace.blade 
+#### Direction:
+___
+- Create a file inside wp-content/themes/sage10/resources/views/blocks name Leadspace
+- Copy code below to this file
 ### Code
 
 ```
