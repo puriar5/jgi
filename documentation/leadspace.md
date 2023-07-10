@@ -357,4 +357,4 @@ new videoPlayer();
 
 
 <br><br><br>
-[Back to the list](../../jgi/readme.md)
+[Back to the list](../readme.md)
