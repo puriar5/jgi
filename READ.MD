@@ -7,9 +7,8 @@
 
   <details>
 
-<summary>
+<summary>Leadspace.blade</summary>
 ## Leadspace.blade 
-</summary>
 ### Code
 ```
 {{--
