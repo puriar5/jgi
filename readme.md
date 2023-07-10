@@ -4,7 +4,7 @@ These are all the list of reusable modules
 
 | Modules        | Links           | Preview  |
 | ------------- |:-------------:| -----:|
-| Leadspace      | [Leadspace](./documentation/leadspace.md) | ![Leadspace 1][leadspacepreview]
+| Leadspace      | [Leadspace](./documentation/leadspace.md) | !Leadspace 1[leadspacepreview]
  |
 
 
