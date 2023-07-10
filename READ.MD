@@ -3,11 +3,9 @@
 <details>
   <summary> Leadspace </summary>
 
-  <blockquote>
-
   <details>
 
-<summary>Leadspace.blade</summary>
+   <summary>Leadspace.blade</summary>
 
 ## Leadspace.blade 
 ### Code
@@ -188,7 +186,6 @@
     </section>
 @endif
 ```
-</blockquote>
 </details>
 
 <details>
