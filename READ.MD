@@ -1,11 +1,11 @@
 # Reusable Modules documentation
 
 <details>
-  <summary> Leadspace </summary>
+<summary> Leadspace </summary>
 
-  <details>
-
-   <summary>Leadspace.blade</summary>
+<blockquote>
+<details>
+<summary>Leadspace.blade</summary>
 
 ## Leadspace.blade 
 ### Code
@@ -187,6 +187,8 @@
 @endif
 ```
 </details>
+</blockquote>
+<blockquote>
 
 <details>
 <summary>Leadspace.js</summary>
@@ -313,6 +315,8 @@ export default videoPlayer;
 new videoPlayer();
 ```
 </details>
+</blockquote>
+<blockquote>
 
 <details>
 <summary>Leadspace.scss</summary>
@@ -358,5 +362,5 @@ new videoPlayer();
 }
 ```
 </details>
-
+</blockquote>
 </details>
