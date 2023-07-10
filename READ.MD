@@ -8,8 +8,10 @@
   <details>
 
 <summary>Leadspace.blade</summary>
+
 ## Leadspace.blade 
 ### Code
+
 ```
 {{--
     script[banner.js]script
